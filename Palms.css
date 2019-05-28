@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+/*font-family: 'Kaushan Script', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.Container {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.Header {
+    background: linear-gradient(
+            rgba(243, 129, 129, 0.85),
+            rgba(252, 227, 138, 0.85)
+    ), url("img/Eagle.png") center center no-repeat;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.Menu div:first-of-type {
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.Menu div:first-of-type:hover {
+    border-bottom: #fce38a solid 3px;
+}
+
+.Menu div:last-of-type {
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 0;
+}
+
+.Menu p {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+
+.Menu p:hover, .Menu a:hover {
+    color: #fce38a;
+    border-bottom: #fce38a solid 2px;
+}
+
+.Menu a:first-of-type {
+    margin-right: 40px;
+}
+
+.Title {
+    width: 100%;
+    display: inline-block;
+    margin: 125px auto;
+}
+
+.Title h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.Title h1 {
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+}
+
+.Title div {
+    background: white;
+    width: 60px;
+    height: 3px;
+    margin: 70px auto;
+}
+
+.Title button {
+    background: transparent;
+    border: solid 3px white;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 25px;
+}
+
+.Title button:hover {
+    border-color: #f38181;
+    color: #f38181;
+}
+
+.MenuBottom div {
+    display: inline-block;
+    border-top: solid 2px white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 25px 150px 10px 0;
+    margin-right: 30px;
+}
+
+.MenuBottom div a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.MenuBottom div:hover {
+    color: #f38181;
+    border-top-color: #f38181;
+}
+
+.PageTitle {
+    width: 100%;
+}
+
+.PageTitle h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.PageTitle h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.PageTitle div {
+    background: #f38181;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto 60px;
+}
+
+.WorkWith {
+    padding-top: 90px;
+}
+.Specialty {
+    text-align: justify;
+    line-height: 24px;
+    padding: 0 30px;
+}
+
+.Specialty div:first-child{
+    margin-bottom: 100px;
+}
+
+.Specialty .Left {
+    width: 30%;
+    float: left;
+}
+
+.Specialty .Right {
+    width: 30%;
+    float: right;
+}
+
+.Specialty .Middle {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.Specialty img {
+    position: absolute;
+}
+
+.Specialty h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 55px;
+}
+
+.Specialty p {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 55px;
+}
+
+.Devices {
+    padding-top: 93px;
+    position: relative;
+}
+.Devices:after {
+    content: "";
+    background:url("img/forest.png") top center no-repeat;;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -3;
+}
+
+.DevicesImg img:first-of-type {
+    position: relative;
+    top: 0;
+    left: -25px;
+}
+
+.DevicesImg img:last-of-type {
+    position: absolute;
+    top: 465px;
+    left: 1050px;
+}
+
+.WhatWeDo {
+    padding: 100px 0 120px;
+}
+
+.WhatWeDoTitle p {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 120px;
+}
+
+
+.WhatWeDoInfo {
+    margin-top: 90px;
+}
+
+.WhatWeDo .PageTitle p {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 125px;
+}
+
+.WhatWeDoInfo img {
+    float: left;
+    width: 570px;
+    height: 380px;
+}
+
+.WhatWeDoInfo div {
+    float: right;
+    width: 600px;
+    height: 380px;
+}
+
+.WhatWeDoInfo button {
+    display: block;
+    width: 100%;
+    height: 55px;
+    border: solid 1px #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.WhatWeDoInfo button:hover {
+    border: #95e1d3 solid 3px;
+}
+.WhatWeDoInfo button:focus {
+    border: #f38181 solid 3px;
+}
+.WhatWeDoInfo button:first-of-type {
+    background: url("img/pic.png") 15px center no-repeat;
+}
+.WhatWeDoInfo button:nth-of-type(2) {
+    background: url("img/equalizer.png") 15px center no-repeat;
+    margin-bottom: 10px;
+}
+.WhatWeDoInfo button:last-of-type {
+    background: url("img/aim.png") 15px center no-repeat;
+}
+
+.WhatWeDoInfo p {
+    text-align: left;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 25px;
+    border: solid 1px #f6f6f6;
+    margin-bottom: 10px;
+}
+
+.Quotes {
+    padding: 80px 0;
+    background: #f8f8f8;
+}
+
+.Quotes .Container div:first-child {
+    padding: 0 110px;
+}
+
+.Quotes a {
+    float: left;
+    border: solid 3px #95e1d3;
+    padding: 45px;
+}
+
+.QuotesText {
+    float: right;
+    text-align: left;
+}
+
+.Quotes a:hover {
+    border: solid 3px #f38181;
+}
+
+.Quotes p {
+    text-align: left;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
+    width: 750px;
+    margin-bottom: 10px;
+}
+
+.QuotesText span {
+    color: #f38181;
+    width: 60px;
+    height: 3px;
+}
+
+.QuotesText h3 {
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.Team {
+    padding: 100px 0 120px
+}
+
+.Team .PageTitle+p {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 125px;
+}
+
+.TeamPhotos {
+    margin-top: 90px;
+}
+
+.TeamPhotos button {
+    transition: all 0.5s;
+    background: transparent;
+    border: none;
+}
+
+.TeamPhotos button:nth-child(2) {
+    margin: 0 20px;
+}
+
+.TeamPhotos span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.TeamPhotos button:first-of-type>span:before {
+    background: linear-gradient(
+            rgba(243, 129, 129, 0.85),
+            rgba(252, 227, 138, 0.85)
+    ), url("img/man1.png") center center no-repeat;
+    content: '';
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    opacity: 0;
+    top: -458px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.TeamPhotos button:nth-of-type(2)>span:before {
+    background: linear-gradient(
+            rgba(243, 129, 129, 0.85),
+            rgba(252, 227, 138, 0.85)
+    ), url("img/man2.png") center center no-repeat;
+    content: '';
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    opacity: 0;
+    top: -458px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.TeamPhotos button:last-of-type>span:before {
+    background: linear-gradient(
+            rgba(243, 129, 129, 0.85),
+            rgba(252, 227, 138, 0.85)
+    ), url("img/man3.png") center center no-repeat;
+    content: '';
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    opacity: 0;
+    top: -458px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.TeamPhotos button:hover span:before, .TeamPhotos button:hover a {
+    opacity: 1;
+    top: -470px;
+    right: 10px;
+    box-shadow: 10px 12px 0 2px #95e1d3;
+}
+
+.TeamPhotos button h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.TeamPhotos button>p {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.Clients {
+    padding: 100px 0 120px;
+    position: relative;
+}
+
+.Clients:after {
+    content: "";
+    background:url("img/Mountain.png") top center no-repeat;;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -3;
+}
+
+.Clients .ClientsLeft {
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+
+.Clients .ClientsRight {
+    float: right;
+    width: 45%;
+    text-align: left;
+}
+
+.Clients .ClientsLeft>div:first-of-type, .Clients .ClientsRight>div:first-of-type {
+    margin-bottom: 70px;
+}
+
+.ClientsLeft img, .ClientsRight img {
+    float: left;
+    margin: 0 30px 35px 0;
+}
+
+.ClientsLeft h2, .ClientsRight h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.ClientsLeft h3, .ClientsRight h3 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+}
+
+.ClientsLeft p, .ClientsRight p {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.ClientsLeft h3:after, .ClientsRight h3:after {
+    display: block;
+    content: '';
+    background: #f38181;
+    width: 60px;
+    height: 3px;
+    margin: 20px 0 20px 140px;
+}
+
+.Footer {
+    padding: 70px 0;
+}
+
+.FooterLeft {
+    float: left;
+    width: 30%;
+}
+.FooterRight {
+    float: right;
+    width: 30%;
+}
+.FooterMiddle {
+    margin: ;
+}
