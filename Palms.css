@@ -26,19 +26,16 @@
 .PageTitle {
     width: 100%;
 }
-
 .PageTitle h3 {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     font-weight: 400;
 }
-
 .PageTitle h2 {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .PageTitle div {
     background: #f38181;
     width: 60px;
@@ -198,12 +195,12 @@
 .DevicesImg img:first-of-type {
     position: relative;
     top: 0;
-    left: -25px;
+    left: 100px;
 }
 .DevicesImg img:last-of-type {
-    position: absolute;
-    top: 465px;
-    left: 1050px;
+    position: relative;
+    top: 90px;
+    left: -20px;
 }
 
 .WhatWeDo {
@@ -321,7 +318,7 @@
     background: #f38181;
     width: 60px;
     height: 3px;
-    margin: 0px 30px 5px -10px;
+    margin: 0 30px 5px -10px;
 }
 
 .Team {
@@ -544,7 +541,7 @@
 }
 .FooterLeft form button {
     width: 150px;
-    height: 41.5px;
+    height: 42px;
     margin-left: -4px;
     border: none;
     background: #95e1d3;
@@ -797,5 +794,331 @@
 
     .FooterLeft ::placeholder {
         font-size: 14px;
+    }
+}
+
+
+@media all and (max-width: 930px) {
+    .Container {
+        width: 100%;
+    }
+
+    .Header {
+        background: linear-gradient(
+                rgba(243, 129, 129, 0.85),
+                rgba(149, 225, 211, 0.85)
+        ), url("img/Eagle.png") top center no-repeat;
+    }
+
+    .Menu div:first-of-type {
+        float: none;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .Menu div:last-of-type {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .Menu p {
+        padding-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .Menu a:first-of-type {
+        margin: 0 5px 0 5px;
+    }
+
+    .Title {
+        margin: 80px auto 50px;
+    }
+
+    .Title h1 {
+        font-size: 100px;
+        line-height: 100px;
+        margin-top: 40px;
+    }
+
+    .Title div {
+        margin: 30px auto 40px;
+    }
+
+    .Title button {
+        background: transparent;
+        border: solid 3px white;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 25px;
+    }
+
+    .MenuBottom div {
+        border-top: none;
+        border-left: solid 2px white;
+        font-size: 18px;
+        padding: 0 10px;
+        margin-right: 0;
+        color: #f38181;
+    }
+
+    .MenuBottom div a {
+        font-size: 16px;
+    }
+
+    .MenuBottom div:hover {
+        color: #fce38a;
+        border-left-color: #f38181;
+    }
+
+    .WorkWith {
+        padding-top: 40px;
+    }
+
+    .Specialty {
+        text-align: left;
+        line-height: 22px;
+        padding: 0 10px;
+    }
+
+    .Specialty div:first-child {
+        margin-bottom: 50px;
+    }
+
+    .Specialty .Left {
+        width: 40%;
+        float: left;
+        margin-right: 70px;
+    }
+
+    .Specialty .Right {
+        width: 40%;
+        float: left;
+    }
+
+    .Specialty .Middle {
+        width: 100%;
+        float: left;
+        margin: 0 0;
+    }
+
+    .Specialty .Middle div:first-of-type {
+        width: 40%;
+        display: inline-block;
+        margin-right: 70px;
+    }
+
+    .Specialty .Middle div:last-of-type {
+        width: 40%;
+        display: inline-block;
+    }
+
+    .Devices {
+        padding-top: 63px;
+    }
+
+    .DevicesImg {
+        height: 700px;
+    }
+
+    .DevicesImg img:first-of-type {
+        top: 50px;
+        left: -5px;
+    }
+
+    .DevicesImg img:last-of-type {
+        top: -340px;
+        left: 145px;
+    }
+
+    .WhatWeDo {
+        padding: 0px 0 40px;
+    }
+
+    .WhatWeDoInfo {
+        margin-top: 0;
+    }
+
+    .WhatWeDo .PageTitle p {
+        padding: 0 25px;
+    }
+
+    .WhatWeDoInfo img {
+        float: none;
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .WhatWeDoInfo div {
+        float: none;
+        width: 95%;
+        height: 90%;
+        margin: 0 auto;
+    }
+
+    .Quotes {
+        padding: 30px 0;
+        background: #f8f8f8;
+    }
+
+    .Quotes .Container div:first-child {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .Quotes a {
+        float: none;
+        border: none;
+        padding: 0;
+    }
+
+    .QuotesText {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .Quotes a:hover {
+        border: none;
+        border-bottom: solid 3px #f38181;
+    }
+
+    .Quotes p {
+        font-size: 20px;
+        line-height: 32px;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+
+    .QuotesText h3 {
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        margin-left: 0;
+    }
+
+    .QuotesText h3:before {
+        width: 40px;
+        margin: 0 15px 5px -10px;
+    }
+
+    .Team {
+        padding: 30px 0 30px
+    }
+
+    .Team .PageTitle + p {
+        padding: 0 25px;
+    }
+
+    .TeamPhotos {
+        margin-top: 30px;
+    }
+
+    .TeamPhotos button {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        transition: all 0.5s;
+    }
+
+    .TeamPhotos button:nth-child(2) {
+        margin: 20px 0;
+    }
+
+    .TeamPhotos button h3 {
+        padding-top: 10px;
+    }
+
+    .TeamPhotos button > p {
+        padding-top: 5px;
+    }
+
+    .Clients {
+        padding: 30px 0 0;
+    }
+
+    .Clients:after {
+        background: url("img/Mountain.png") top center repeat-y;;
+    }
+
+    .Clients .ClientsLeft {
+        float: left;
+        width: 100%;
+        margin: 0 0 0 10px;
+    }
+
+    .Clients .ClientsRight {
+        float: left;
+        width: 100%;
+        margin: 0 0 0 10px;
+    }
+
+    .ClientsLeft img, .ClientsRight img {
+        float: left;
+        margin: 0 20px 120px 0;
+    }
+
+    .ClientsLeft p, .ClientsRight p {
+        padding: 0 15px;
+    }
+
+    .ClientsLeft h3:after, .ClientsRight h3:after {
+        margin: 20px 0 20px 130px;
+    }
+
+    .Footer {
+        padding-top: 30px;
+    }
+
+    .Footer .Container {
+        padding-bottom: 20px;
+    }
+
+    .FooterLeft {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .FooterRight {
+        display: none;
+    }
+
+    .FooterMiddle {
+        display: none;
+    }
+
+    .FooterLeft h2 {
+        padding-left: 20px;
+    }
+
+    .FooterLeft p:first-of-type {
+        margin: 15px 0 30px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+
+    .FooterLeft p:nth-of-type(2) {
+        width: 100%;
+        padding: 0 0 15px 20px;
+    }
+
+    .FooterLeft p:last-of-type {
+        margin: 15px 0 20px;
+        padding-left: 20px;
+    }
+
+    .FooterLeft p:last-of-type a {
+        margin-left: 20px;
+    }
+
+    .FooterLeft form {
+        text-align: center;
     }
 }
