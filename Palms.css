@@ -23,111 +23,6 @@
     clear: both;
 }
 
-.Header {
-    background: linear-gradient(
-            rgba(243, 129, 129, 0.85),
-            rgba(252, 227, 138, 0.85)
-    ), url("img/Eagle.png") center center no-repeat;
-    color: white;
-    padding-bottom: 10px;
-}
-
-.Menu div:first-of-type {
-    float: left;
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 20px;
-}
-.Menu div:first-of-type:hover {
-    border-bottom: #fce38a solid 3px;
-}
-
-.Menu div:last-of-type {
-    float: right;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 30px 0;
-}
-
-.Menu p {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: 10px;
-    margin-right: 50px;
-}
-
-.Menu p:hover, .Menu a:hover {
-    color: #fce38a;
-    border-bottom: #fce38a solid 2px;
-}
-
-.Menu a:first-of-type {
-    margin-right: 40px;
-}
-
-.Title {
-    width: 100%;
-    display: inline-block;
-    margin: 125px auto;
-}
-
-.Title h2 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 72px;
-    font-weight: 400;
-}
-
-.Title h1 {
-    font-size: 150px;
-    font-weight: 700;
-    line-height: 140px;
-}
-
-.Title div {
-    background: white;
-    width: 60px;
-    height: 3px;
-    margin: 70px auto;
-}
-
-.Title button {
-    background: transparent;
-    border: solid 3px white;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 25px;
-}
-
-.Title button:hover {
-    border-color: #f38181;
-    color: #f38181;
-}
-
-.MenuBottom div {
-    display: inline-block;
-    border-top: solid 2px white;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 25px 150px 10px 0;
-    margin-right: 30px;
-}
-
-.MenuBottom div a {
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.MenuBottom div:hover {
-    color: #f38181;
-    border-top-color: #f38181;
-}
-
 .PageTitle {
     width: 100%;
 }
@@ -151,6 +46,100 @@
     margin: 40px auto 60px;
 }
 
+.Header {
+    background: linear-gradient(
+            rgba(243, 129, 129, 0.85),
+            rgba(252, 227, 138, 0.85)
+    ), url("img/Eagle.png") center center no-repeat;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.Menu div:first-of-type {
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.Menu div:first-of-type:hover {
+    border-bottom: #fce38a solid 3px;
+}
+.Menu div:last-of-type {
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 0;
+}
+.Menu p {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+.Menu p:hover, .Menu a:hover {
+    color: #fce38a;
+    border-bottom: #fce38a solid 2px;
+}
+.Menu a:first-of-type {
+    margin-right: 40px;
+}
+
+.Title {
+    width: 100%;
+    display: inline-block;
+    margin: 125px auto;
+}
+.Title h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    font-weight: 400;
+}
+.Title h1 {
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+}
+.Title div {
+    background: white;
+    width: 60px;
+    height: 3px;
+    margin: 70px auto;
+}
+.Title button {
+    background: transparent;
+    border: solid 3px white;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 25px;
+}
+.Title button:hover {
+    border-color: #f38181;
+    color: #f38181;
+}
+
+.MenuBottom div {
+    display: inline-block;
+    border-top: solid 2px white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 25px 150px 10px 0;
+    margin-right: 30px;
+}
+.MenuBottom div a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.MenuBottom div:hover {
+    color: #f38181;
+    border-top-color: #f38181;
+}
+
 .WorkWith {
     padding-top: 90px;
 }
@@ -159,37 +148,30 @@
     line-height: 24px;
     padding: 0 30px;
 }
-
 .Specialty div:first-child{
     margin-bottom: 100px;
 }
-
 .Specialty .Left {
     width: 30%;
     float: left;
 }
-
 .Specialty .Right {
     width: 30%;
     float: right;
 }
-
 .Specialty .Middle {
     margin-left: 35%;
     margin-right: 35%;
 }
-
 .Specialty img {
     position: absolute;
 }
-
 .Specialty h2 {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 55px;
 }
-
 .Specialty p {
     font-family: 'Roboto', sans-serif;
     color: #999999;
@@ -213,13 +195,11 @@
     position: absolute;
     z-index: -3;
 }
-
 .DevicesImg img:first-of-type {
     position: relative;
     top: 0;
     left: -25px;
 }
-
 .DevicesImg img:last-of-type {
     position: absolute;
     top: 465px;
@@ -229,7 +209,6 @@
 .WhatWeDo {
     padding: 100px 0 120px;
 }
-
 .WhatWeDoTitle p {
     font-family: 'Roboto', sans-serif;
     color: #999999;
@@ -238,12 +217,9 @@
     line-height: 24px;
     padding: 0 120px;
 }
-
-
 .WhatWeDoInfo {
     margin-top: 90px;
 }
-
 .WhatWeDo .PageTitle p {
     color: #999999;
     font-family: 'Roboto', sans-serif;
@@ -252,19 +228,16 @@
     line-height: 24px;
     padding: 0 125px;
 }
-
 .WhatWeDoInfo img {
     float: left;
     width: 570px;
     height: 380px;
 }
-
 .WhatWeDoInfo div {
     float: right;
     width: 600px;
     height: 380px;
 }
-
 .WhatWeDoInfo button {
     display: block;
     width: 100%;
@@ -277,7 +250,6 @@
     text-align: left;
     padding-left: 60px;
 }
-
 .WhatWeDoInfo button:hover {
     border: #95e1d3 solid 3px;
 }
@@ -294,7 +266,6 @@
 .WhatWeDoInfo button:last-of-type {
     background: url("img/aim.png") 15px center no-repeat;
 }
-
 .WhatWeDoInfo p {
     text-align: left;
     color: #999999;
@@ -312,26 +283,21 @@
     padding: 80px 0;
     background: #f8f8f8;
 }
-
 .Quotes .Container div:first-child {
     padding: 0 110px;
 }
-
 .Quotes a {
     float: left;
     border: solid 3px #95e1d3;
     padding: 45px;
 }
-
 .QuotesText {
     float: right;
     text-align: left;
 }
-
 .Quotes a:hover {
     border: solid 3px #f38181;
 }
-
 .Quotes p {
     text-align: left;
     color: #999999;
@@ -342,7 +308,6 @@
     width: 750px;
     margin-bottom: 10px;
 }
-
 .QuotesText h3 {
     display: inline-block;
     font-family: 'Kaushan Script', cursive;
@@ -350,7 +315,6 @@
     font-weight: 400;
     margin-left: 10px;
 }
-
 .QuotesText h3:before {
     display: inline-block;
     content: '';
@@ -363,7 +327,6 @@
 .Team {
     padding: 100px 0 120px
 }
-
 .Team .PageTitle+p {
     color: #999999;
     font-family: 'Roboto', sans-serif;
@@ -372,27 +335,22 @@
     line-height: 24px;
     padding: 0 125px;
 }
-
 .TeamPhotos {
     margin-top: 90px;
 }
-
 .TeamPhotos button {
     transition: all 0.5s;
     background: transparent;
     border: none;
 }
-
 .TeamPhotos button:nth-child(2) {
     margin: 0 20px;
 }
-
 .TeamPhotos span {
     cursor: pointer;
     position: relative;
     transition: 0.5s;
 }
-
 .TeamPhotos button:first-of-type>span:before {
     background: linear-gradient(
             rgba(243, 129, 129, 0.85),
@@ -407,7 +365,6 @@
     right: 0;
     transition: 0.5s;
 }
-
 .TeamPhotos button:nth-of-type(2)>span:before {
     background: linear-gradient(
             rgba(243, 129, 129, 0.85),
@@ -422,7 +379,6 @@
     right: 0;
     transition: 0.5s;
 }
-
 .TeamPhotos button:last-of-type>span:before {
     background: linear-gradient(
             rgba(243, 129, 129, 0.85),
@@ -437,21 +393,18 @@
     right: 0;
     transition: 0.5s;
 }
-
 .TeamPhotos button:hover span:before, .TeamPhotos button:hover a {
     opacity: 1;
     top: -470px;
     right: 10px;
     box-shadow: 10px 12px 0 2px #95e1d3;
 }
-
 .TeamPhotos button h3 {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     padding-top: 20px;
 }
-
 .TeamPhotos button>p {
     font-family: 'Roboto', sans-serif;
     color: #999999;
@@ -466,7 +419,6 @@
     padding: 100px 0 120px;
     position: relative;
 }
-
 .Clients:after {
     content: "";
     background:url("img/Mountain.png") top center no-repeat;;
@@ -478,42 +430,35 @@
     position: absolute;
     z-index: -3;
 }
-
 .Clients .ClientsLeft {
     float: left;
     width: 45%;
     text-align: left;
 }
-
 .Clients .ClientsRight {
     float: right;
     width: 45%;
     text-align: left;
 }
-
 .Clients .ClientsLeft>div:first-of-type, .Clients .ClientsRight>div:first-of-type {
     margin-bottom: 70px;
 }
-
 .ClientsLeft img, .ClientsRight img {
     float: left;
-    margin: 0 30px 35px 0;
+    margin: 0 30px 120px 0;
 }
-
 .ClientsLeft h2, .ClientsRight h2 {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
 .ClientsLeft h3, .ClientsRight h3 {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     font-style: italic;
 }
-
 .ClientsLeft p, .ClientsRight p {
     color: #999999;
     font-family: 'Roboto', sans-serif;
@@ -521,7 +466,6 @@
     font-weight: 400;
     line-height: 24px;
 }
-
 .ClientsLeft h3:after, .ClientsRight h3:after {
     display: block;
     content: '';
@@ -534,12 +478,10 @@
 .Footer {
     padding-top: 70px;
 }
-
 .Footer .Container {
     border-bottom: solid 2px #e5e5e5;
     padding-bottom: 70px;
 }
-
 .FooterLeft {
     float: left;
     width: 39%;
@@ -552,14 +494,12 @@
     margin: 0 255px 0 43%;
     width: 450px;
 }
-
 .FooterLeft h2 {
     text-align: left;
     color: #cccccc;
     font-size: 46px;
     font-weight: 700;
 }
-
 .FooterLeft p:first-of-type {
     text-align: left;
     color: #999999;
@@ -569,7 +509,6 @@
     line-height: 24px;
     margin: 40px 0 40px;
 }
-
 .FooterLeft p:nth-of-type(2) {
     text-align: left;
     color: #333333;
@@ -577,12 +516,10 @@
     padding-bottom: 15px;
     border-bottom: #e5e5e5 solid 2px;
 }
-
 .FooterLeft p:nth-of-type(2) span {
     font-size: 18px;
     font-weight: 700;
 }
-
 .FooterLeft p:last-of-type {
     margin: 15px 0 35px;
     text-align: left;
@@ -593,22 +530,18 @@
     font-weight: 400;
     line-height: 24px;
 }
-
 .FooterLeft p:last-of-type a {
     margin-left: 20px;
 }
-
 .FooterLeft form {
     text-align: left;
 }
-
 .FooterLeft form input {
     width: 230px;
     height: 40px;
     border: #e7e7e7 solid 1px;
     padding-left: 15px;
 }
-
 .FooterLeft form button {
     width: 150px;
     height: 41.5px;
@@ -621,7 +554,6 @@
     text-transform: uppercase;
     text-align: center;
 }
-
 .FooterLeft ::placeholder {
     color: #cccccc;
     font-family: 'Roboto', sans-serif;
@@ -630,7 +562,6 @@
     font-weight: 400;
     line-height: 24px;
 }
-
 .FooterRight h2 {
     text-align: left;
     font-size: 14px;
@@ -638,12 +569,10 @@
     text-transform: uppercase;
     padding-top: 30px;
 }
-
 .FooterRight img {
     margin: 40px 0 23px;
     width: 100%;
 }
-
 .FooterRight p {
     text-align: left;
     color: #333333;
@@ -653,7 +582,6 @@
     font-weight: 400;
     line-height: 24px;
 }
-
 .FooterMiddle h2 {
     text-align: left;
     font-size: 14px;
@@ -661,21 +589,17 @@
     text-transform: uppercase;
     padding-top: 30px;
 }
-
 .FooterMiddle div:not(:first-of-type) {
     text-align: left;
     margin-top: 30px;
 }
-
 .FooterMiddle div:first-of-type {
     text-align: left;
     margin-top: 40px;
 }
-
 .FooterMiddle img {
     float: left;
 }
-
 .FooterMiddle h3 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
@@ -685,7 +609,6 @@
     text-transform: uppercase;
     padding: 15px 80px 5px 135px;
 }
-
 .FooterMiddle p {
     color: #999999;
     font-family: 'Roboto', sans-serif;
@@ -702,7 +625,177 @@
     font-weight: 500;
     margin: 20px 0;
 }
-
 .Copyright h2 > span {
     color: #f38181;
+}
+
+
+@media all and (max-width: 1140px) {
+    .Container {
+        width: 100%;
+    }
+
+    .PageTitle div {
+        margin: 30px auto 50px;
+    }
+
+    .Header {
+        background: linear-gradient(
+                rgba(243, 129, 129, 0.85),
+                rgba(252, 227, 138, 0.85)
+        ), url("img/Eagle.png") top center no-repeat;
+        color: white;
+    }
+
+    .Menu div:first-of-type {
+        margin-left: 15px;
+    }
+
+    .Menu div:last-of-type {
+        margin-right: 15px;
+    }
+
+    .Menu p {
+        margin-right: 30px;
+    }
+
+    .Menu a:first-of-type {
+        margin-right: 20px;
+    }
+
+    .Title {
+        margin: 80px auto;
+    }
+
+    .MenuBottom div {
+        font-size: 20px;
+        padding: 20px 70px 10px 0;
+        margin-right: 20px;
+    }
+
+    .WorkWith {
+        padding-top: 70px;
+    }
+
+    .Devices {
+        padding-top: 70px;
+    }
+
+    .DevicesImg img:first-of-type {
+        top: 3px;
+        left: 110px;
+    }
+
+    .DevicesImg img:last-of-type {
+        position: relative;
+        top: 95px;
+        left: -10px;
+    }
+
+    .WhatWeDo {
+        padding: 80px 0 90px;
+    }
+
+    .WhatWeDoInfo {
+        margin-top: 60px;
+        text-align: left;
+    }
+
+    .WhatWeDoInfo img {
+        float: none;
+        width: 450px;
+        height: 280px;
+        padding: 55px 0 0 15px;
+    }
+
+    .WhatWeDoInfo div {
+        float: right;
+        width: 400px;
+        height: 380px;
+        margin: 0 20px;
+    }
+
+    .WhatWeDoInfo button {
+        width: 400px;
+    }
+
+    .Quotes {
+        padding: 40px 0;
+    }
+
+    .Quotes .Container div:first-child {
+        padding: 0 20px;
+    }
+
+    .Quotes a {
+        padding: 15px;
+        margin: 15px 0 15px 15px
+    }
+
+    .Team {
+        padding: 50px 0 60px
+    }
+
+    .TeamPhotos {
+        margin-top: 50px;
+    }
+
+    .TeamPhotos button:nth-child(2) {
+        margin: 0 0 20px 100px;
+    }
+
+    .Clients {
+        padding: 50px 0 40px;
+    }
+
+    .Clients .ClientsLeft {
+        margin-left: 20px;
+    }
+
+    .Clients .ClientsRight {
+        margin-right: 20px;
+    }
+
+    .Footer {
+        padding-top: 40px;
+    }
+
+    .Footer .Container {
+        padding-bottom: 40px;
+    }
+
+    .FooterLeft {
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    .FooterRight {
+        margin-right: 20px;
+    }
+
+    .FooterMiddle {
+        margin: 0 275px 0 35%;
+        width: 370px;
+    }
+
+    .FooterLeft p:last-of-type {
+        margin: 15px 0 20px;
+    }
+
+    .FooterLeft p:last-of-type a {
+        margin-left: 10px;
+    }
+
+    .FooterLeft form input {
+        width: 150px;
+    }
+
+    .FooterLeft form button {
+        width: 90px;
+        font-size: 12px;
+    }
+
+    .FooterLeft ::placeholder {
+        font-size: 14px;
+    }
 }
