@@ -322,7 +322,8 @@
 }
 
 .Team {
-    padding: 100px 0 120px
+    padding: 100px 0 120px;
+
 }
 .Team .PageTitle+p {
     color: #999999;
@@ -332,23 +333,21 @@
     line-height: 24px;
     padding: 0 125px;
 }
+
 .TeamPhotos {
     margin-top: 90px;
 }
-.TeamPhotos button {
-    transition: all 0.5s;
-    background: transparent;
-    border: none;
+
+.TeamPhotos > div {
+    display: inline-block;
+    position: relative;
 }
-.TeamPhotos button:nth-child(2) {
+
+.TeamPhotos > div:nth-of-type(2) {
     margin: 0 20px;
 }
-.TeamPhotos span {
-    cursor: pointer;
-    position: relative;
-    transition: 0.5s;
-}
-.TeamPhotos button:first-of-type>span:before {
+
+.TeamPhotos > div:first-of-type:before {
     background: linear-gradient(
             rgba(243, 129, 129, 0.85),
             rgba(252, 227, 138, 0.85)
@@ -357,12 +356,15 @@
     width: 380px;
     height: 470px;
     position: absolute;
+    z-index: 1;
     opacity: 0;
-    top: -458px;
-    right: 0;
+    top: -10px;
+    right: 10px;
+    box-shadow: 10px 12px 0 2px #95e1d3;
     transition: 0.5s;
 }
-.TeamPhotos button:nth-of-type(2)>span:before {
+
+.TeamPhotos > div:nth-of-type(2):before {
     background: linear-gradient(
             rgba(243, 129, 129, 0.85),
             rgba(252, 227, 138, 0.85)
@@ -371,12 +373,15 @@
     width: 380px;
     height: 470px;
     position: absolute;
+    z-index: 1;
     opacity: 0;
-    top: -458px;
-    right: 0;
+    top: -10px;
+    right: 10px;
+    box-shadow: 10px 12px 0 2px #95e1d3;
     transition: 0.5s;
 }
-.TeamPhotos button:last-of-type>span:before {
+
+.TeamPhotos > div:last-of-type:before {
     background: linear-gradient(
             rgba(243, 129, 129, 0.85),
             rgba(252, 227, 138, 0.85)
@@ -385,24 +390,79 @@
     width: 380px;
     height: 470px;
     position: absolute;
+    z-index: 1;
     opacity: 0;
-    top: -458px;
-    right: 0;
-    transition: 0.5s;
-}
-.TeamPhotos button:hover span:before, .TeamPhotos button:hover a {
-    opacity: 1;
-    top: -470px;
+    top: -10px;
     right: 10px;
     box-shadow: 10px 12px 0 2px #95e1d3;
+    transition: 0.5s;
 }
-.TeamPhotos button h3 {
+
+
+.TeamPhotos > div:hover > .SocialLinks {
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+.TeamPhotos > div:hover:before {
+    opacity: 1;
+
+}
+
+.TeamPhotos div.SocialLinks {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    left: 70px;
+    opacity: 0;
+}
+
+.SocialLinks > a {
+    display: inline-block;
+    width: 56px;
+    transition: 0.5s;
+}
+
+.SocialLinks > a:first-of-type {
+    background: #fce38a;
+    border-right: solid 1px #f38181;
+}
+
+.SocialLinks > a:nth-of-type(2) {
+    background: #fce38a;
+    border-right: solid 1px #f38181;
+}
+
+.SocialLinks > a:nth-of-type(3) {
+    background: #fce38a;
+    border-right: solid 1px #f38181;
+}
+
+.SocialLinks > a:last-of-type {
+    background: #fce38a;
+}
+
+.SocialLinks > a:hover {
+    background: linear-gradient(
+            rgba(243, 129, 129, 0.9),
+            rgba(149, 225, 211, 0.9)
+    );
+    transition: 0.5s;
+}
+
+.SocialLinks > a > img {
+    margin: 15px auto;
+}
+
+.TeamPhotos > div > h3 {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     padding-top: 20px;
 }
-.TeamPhotos button>p {
+
+.TeamPhotos > div > p {
     font-family: 'Roboto', sans-serif;
     color: #999999;
     font-size: 15px;
@@ -1121,3 +1181,15 @@
         text-align: center;
     }
 }
+
+/*@media all and (max-width: 775px) {
+    .DevicesImg img:first-of-type {
+        top: 53px;
+        left: -20px;
+    }
+
+    .DevicesImg img:last-of-type {
+        top: -340px;
+        left: 150px;
+    }
+}/*
