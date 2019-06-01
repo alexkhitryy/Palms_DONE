@@ -684,7 +684,6 @@
     }
 
     .DevicesImg img:last-of-type {
-        position: relative;
         top: 95px;
         left: -10px;
     }
@@ -917,25 +916,21 @@
     }
 
     .Devices {
-        padding-top: 63px;
-    }
-
-    .DevicesImg {
-        height: 700px;
+        padding-top: 60px;
     }
 
     .DevicesImg img:first-of-type {
-        top: 50px;
-        left: -5px;
+        top: 3px;
+        left: 100px;
     }
 
     .DevicesImg img:last-of-type {
-        top: -340px;
-        left: 145px;
+        top: 90px;
+        left: -85px;
     }
 
     .WhatWeDo {
-        padding: 0px 0 40px;
+        padding: 45px 0 40px;
     }
 
     .WhatWeDoInfo {
@@ -958,6 +953,10 @@
         width: 95%;
         height: 90%;
         margin: 0 auto;
+    }
+
+    .WhatWeDoInfo button {
+        width: 100%;
     }
 
     .Quotes {
@@ -1059,13 +1058,13 @@
         margin: 0 0 0 10px;
     }
 
+    .Clients .ClientsLeft > div:last-child, .Clients .ClientsRight > div:last-of-type {
+        float: left;
+    }
+
     .ClientsLeft img, .ClientsRight img {
         float: left;
         margin: 0 20px 120px 0;
-    }
-
-    .ClientsLeft p, .ClientsRight p {
-        padding: 0 15px;
     }
 
     .ClientsLeft h3:after, .ClientsRight h3:after {
