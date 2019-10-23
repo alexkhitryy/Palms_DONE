@@ -1,1197 +1,157 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-/*font-family: 'Kaushan Script', cursive;*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900&display=swap');
-/*font-family: 'Montserrat', sans-serif;*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
-/*font-family: 'Roboto', sans-serif;*/
-
-* {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+h1 {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  color: #333;
+}
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.accordion ul li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+.accordion ul li:nth-child(1) {
+  background-image: url('../Project/img/Netherlands/gallery01.jpg');
+}
+.accordion ul li:nth-child(2) {
+    background-image: url('../Project/img/Netherlands/gallery02.jpg');
+}
+.accordion ul li:nth-child(3) {
+    background-image: url('../Project/img/Netherlands/gallery03.jpg');
+}
+.accordion ul li:nth-child(4) {
+    background-image: url('../Project/img/Netherlands/neth1.jpg');
+}
+.accordion ul li:nth-child(5) {
+    background-image: url('../Project/img/Netherlands/neth2.jpg');
+}
+.accordion ul li:nth-child(6) {
+    background-image: url('../Project/img/Netherlands/neth3.jpg');
+}
+.accordion ul:hover li, .accordion ul:focus-within li {
+  width: 8%;
+}
+.accordion ul li:focus {
+  outline: none;
+}
+.accordion ul:hover li:hover, .accordion ul li:focus, .accordion ul:focus-within li:focus {
+  width: 60%;
+}
+.accordion ul:hover li:hover a, .accordion ul li:focus a, .accordion ul:focus-within li:focus a {
+  background: rgba(0, 0, 0, .4);
+}
+.accordion ul:hover li:hover a *, .accordion ul li:focus a *, .accordion ul:focus-within li:focus a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.accordion ul:hover li {
+  width: 8% !important;
+}
+.accordion ul:hover li a * {
+  opacity: 0 !important;
+}
+.accordion ul:hover li:hover {
+  width: 60% !important;
+}
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, .4);
+}
+.accordion ul:hover li:hover a * {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+@media screen and (max-width: 600px) {
+  body {
     margin: 0;
-    padding: 0
-}
-
-.Container {
-    width: 1200px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.PageTitle {
+  }
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li, .accordion ul:hover li, .accordion ul li:hover, .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
     width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.about {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+.about a {
+  color: blue;
+  text-decoration: none;
+}
+.about a:hover {
+  text-decoration: underline;
 }
-.PageTitle h3 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 24px;
-    font-weight: 400;
-}
-.PageTitle h2 {
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.PageTitle div {
-    background: #f38181;
-    width: 60px;
-    height: 3px;
-    margin: 40px auto 60px;
-}
-
-.Header {
-    background: linear-gradient(
-            rgba(243, 129, 129, 0.85),
-            rgba(252, 227, 138, 0.85)
-    ), url("img/Eagle.png") center center no-repeat;
-    color: white;
-    padding-bottom: 10px;
-}
-
-.Menu div:first-of-type {
-    float: left;
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 20px;
-}
-.Menu div:first-of-type:hover {
-    border-bottom: #fce38a solid 3px;
-}
-.Menu div:last-of-type {
-    float: right;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 30px 0;
-
-}
-.Menu p {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: 10px;
-    margin-right: 50px;
-    border-bottom: solid 2px transparent;
-}
-.Menu p:hover, .Menu a:hover {
-    color: #fce38a;
-    border-bottom: #fce38a solid 2px;
-}
-.Menu a:first-of-type {
-    margin-right: 40px;
-}
-
-.Title {
-    width: 100%;
-    display: inline-block;
-    margin: 125px auto;
-}
-.Title h2 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 72px;
-    font-weight: 400;
-}
-.Title h1 {
-    font-size: 150px;
-    font-weight: 700;
-    line-height: 140px;
-}
-.Title div {
-    background: white;
-    width: 60px;
-    height: 3px;
-    margin: 70px auto;
-}
-.Title button {
-    background: transparent;
-    border: solid 3px white;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 25px;
-}
-.Title button:hover {
-    border-color: #f38181;
-    color: #f38181;
-}
-
-.MenuBottom div {
-    display: inline-block;
-    border-top: solid 2px white;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 25px 150px 10px 0;
-    margin-right: 30px;
-}
-.MenuBottom div a {
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.MenuBottom div:hover {
-    color: #f38181;
-    border-top-color: #f38181;
-}
-
-.WorkWith {
-    padding-top: 90px;
-}
-.Specialty {
-    text-align: justify;
-    line-height: 24px;
-    padding: 0 30px;
-}
-.Specialty div:first-child{
-    margin-bottom: 100px;
-}
-.Specialty .Left {
-    width: 30%;
-    float: left;
-}
-.Specialty .Right {
-    width: 30%;
-    float: right;
-}
-.Specialty .Middle {
-    margin-left: 35%;
-    margin-right: 35%;
-}
-.Specialty img {
-    position: absolute;
-}
-.Specialty h2 {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-left: 55px;
-}
-.Specialty p {
-    font-family: 'Roboto', sans-serif;
-    color: #999999;
-    font-size: 15px;
-    font-weight: 400;
-    padding-left: 55px;
-}
-
-.Devices {
-    padding-top: 93px;
-    position: relative;
-}
-.Devices:after {
-    content: "";
-    background:url("img/forest.png") top center no-repeat;;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -3;
-}
-.DevicesImg img:first-of-type {
-    position: relative;
-    top: 0;
-    left: 100px;
-}
-.DevicesImg img:last-of-type {
-    position: relative;
-    top: 90px;
-    left: -20px;
-}
-
-.WhatWeDo {
-    padding: 100px 0 120px;
-}
-.WhatWeDoTitle p {
-    font-family: 'Roboto', sans-serif;
-    color: #999999;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 0 120px;
-}
-.WhatWeDoInfo {
-    margin-top: 90px;
-}
-.WhatWeDo .PageTitle p {
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 0 125px;
-}
-.WhatWeDoInfo img {
-    float: left;
-    width: 570px;
-    height: 380px;
-}
-.WhatWeDoInfo div {
-    float: right;
-    width: 600px;
-    height: 380px;
-}
-.WhatWeDoInfo button {
-    display: block;
-    width: 100%;
-    height: 55px;
-    border: solid 1px #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: left;
-    padding-left: 60px;
-}
-.WhatWeDoInfo button:hover {
-    border: #95e1d3 solid 3px;
-}
-.WhatWeDoInfo button:focus {
-    border: #f38181 solid 3px;
-}
-.WhatWeDoInfo button:first-of-type {
-    background: url("img/pic.png") 15px center no-repeat;
-}
-.WhatWeDoInfo button:nth-of-type(2) {
-    background: url("img/equalizer.png") 15px center no-repeat;
-    margin-bottom: 10px;
-}
-.WhatWeDoInfo button:last-of-type {
-    background: url("img/aim.png") 15px center no-repeat;
-}
-.WhatWeDoInfo p {
-    text-align: left;
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 25px;
-    border: solid 1px #f6f6f6;
-    margin-bottom: 10px;
-}
-
-.Quotes {
-    padding: 80px 0;
-    background: #f8f8f8;
-}
-.Quotes .Container div:first-child {
-    padding: 0 110px;
-}
-.Quotes a {
-    float: left;
-    border: solid 3px #95e1d3;
-    padding: 45px;
-}
-.QuotesText {
-    float: right;
-    text-align: left;
-}
-.Quotes a:hover {
-    border: solid 3px #f38181;
-}
-.Quotes p {
-    text-align: left;
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 24px;
-    line-height: 36px;
-    width: 750px;
-    margin-bottom: 10px;
-}
-.QuotesText h3 {
-    display: inline-block;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 24px;
-    font-weight: 400;
-    margin-left: 10px;
-}
-.QuotesText h3:before {
-    display: inline-block;
-    content: '';
-    background: #f38181;
-    width: 60px;
-    height: 3px;
-    margin: 0 30px 5px -10px;
-}
-
-.Team {
-    padding: 100px 0 120px;
-
-}
-.Team .PageTitle+p {
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 0 125px;
-}
-
-.TeamPhotos {
-    margin-top: 90px;
-}
-
-.TeamPhotos > div {
-    display: inline-block;
-    position: relative;
-}
-
-.TeamPhotos > div:nth-of-type(2) {
-    margin: 0 20px;
-}
-
-.TeamPhotos > div:first-of-type:before {
-    background: linear-gradient(
-            rgba(243, 129, 129, 0.85),
-            rgba(252, 227, 138, 0.85)
-    ), url("img/man1.png") center center no-repeat;
-    content: '';
-    width: 380px;
-    height: 470px;
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    top: -10px;
-    right: 10px;
-    box-shadow: 10px 12px 0 2px #95e1d3;
-    transition: 0.5s;
-}
-
-.TeamPhotos > div:nth-of-type(2):before {
-    background: linear-gradient(
-            rgba(243, 129, 129, 0.85),
-            rgba(252, 227, 138, 0.85)
-    ), url("img/man2.png") center center no-repeat;
-    content: '';
-    width: 380px;
-    height: 470px;
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    top: -10px;
-    right: 10px;
-    box-shadow: 10px 12px 0 2px #95e1d3;
-    transition: 0.5s;
-}
-
-.TeamPhotos > div:last-of-type:before {
-    background: linear-gradient(
-            rgba(243, 129, 129, 0.85),
-            rgba(252, 227, 138, 0.85)
-    ), url("img/man3.png") center center no-repeat;
-    content: '';
-    width: 380px;
-    height: 470px;
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    top: -10px;
-    right: 10px;
-    box-shadow: 10px 12px 0 2px #95e1d3;
-    transition: 0.5s;
-}
-
-
-.TeamPhotos > div:hover > .SocialLinks {
-    opacity: 1;
-    transition: 0.5s;
-
-}
-
-.TeamPhotos > div:hover:before {
-    opacity: 1;
-
-}
-
-.TeamPhotos div.SocialLinks {
-    position: absolute;
-    z-index: 2;
-    top: 200px;
-    left: 70px;
-    opacity: 0;
-}
-
-.SocialLinks > a {
-    display: inline-block;
-    width: 56px;
-    transition: 0.5s;
-}
-
-.SocialLinks > a:first-of-type {
-    background: #fce38a;
-    border-right: solid 1px #f38181;
-}
-
-.SocialLinks > a:nth-of-type(2) {
-    background: #fce38a;
-    border-right: solid 1px #f38181;
-}
-
-.SocialLinks > a:nth-of-type(3) {
-    background: #fce38a;
-    border-right: solid 1px #f38181;
-}
-
-.SocialLinks > a:last-of-type {
-    background: #fce38a;
-}
-
-.SocialLinks > a:hover {
-    background: linear-gradient(
-            rgba(243, 129, 129, 0.9),
-            rgba(149, 225, 211, 0.9)
-    );
-    transition: 0.5s;
-}
-
-.SocialLinks > a > img {
-    margin: 15px auto;
-}
-
-.TeamPhotos > div > h3 {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-top: 20px;
-}
-
-.TeamPhotos > div > p {
-    font-family: 'Roboto', sans-serif;
-    color: #999999;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    font-style: italic;
-    padding-top: 10px;
-}
-
-.Clients {
-    padding: 100px 0 120px;
-    position: relative;
-}
-.Clients:after {
-    content: "";
-    background:url("img/Mountain.png") top center no-repeat;;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -3;
-}
-.Clients .ClientsLeft {
-    float: left;
-    width: 45%;
-    text-align: left;
-}
-.Clients .ClientsRight {
-    float: right;
-    width: 45%;
-    text-align: left;
-}
-.Clients .ClientsLeft>div:first-of-type, .Clients .ClientsRight>div:first-of-type {
-    margin-bottom: 70px;
-}
-.ClientsLeft img, .ClientsRight img {
-    float: left;
-    margin: 0 30px 120px 0;
-}
-.ClientsLeft h2, .ClientsRight h2 {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-.ClientsLeft h3, .ClientsRight h3 {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    font-style: italic;
-}
-.ClientsLeft p, .ClientsRight p {
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-}
-.ClientsLeft h3:after, .ClientsRight h3:after {
-    display: block;
-    content: '';
-    background: #f38181;
-    width: 60px;
-    height: 3px;
-    margin: 20px 0 20px 140px;
-}
-
-.Footer {
-    padding-top: 70px;
-}
-.Footer .Container {
-    border-bottom: solid 2px #e5e5e5;
-    padding-bottom: 70px;
-}
-.FooterLeft {
-    float: left;
-    width: 39%;
-}
-.FooterRight {
-    float: right;
-    width: 250px;
-}
-.FooterMiddle {
-    margin: 0 255px 0 43%;
-    width: 450px;
-}
-.FooterLeft h2 {
-    text-align: left;
-    color: #cccccc;
-    font-size: 46px;
-    font-weight: 700;
-}
-.FooterLeft p:first-of-type {
-    text-align: left;
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 40px 0 40px;
-}
-.FooterLeft p:nth-of-type(2) {
-    text-align: left;
-    color: #333333;
-    font-weight: 400;
-    padding-bottom: 15px;
-    border-bottom: #e5e5e5 solid 2px;
-}
-.FooterLeft p:nth-of-type(2) span {
-    font-size: 18px;
-    font-weight: 700;
-}
-.FooterLeft p:last-of-type {
-    margin: 15px 0 35px;
-    text-align: left;
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-}
-.FooterLeft p:last-of-type a {
-    margin-left: 20px;
-}
-.FooterLeft form {
-    text-align: left;
-}
-.FooterLeft form input {
-    width: 230px;
-    height: 40px;
-    border: #e7e7e7 solid 1px;
-    padding-left: 15px;
-}
-.FooterLeft form button {
-    width: 150px;
-    height: 42px;
-    margin-left: -4px;
-    border: none;
-    background: #95e1d3;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-}
-.FooterLeft ::placeholder {
-    color: #cccccc;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-}
-.FooterRight h2 {
-    text-align: left;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 30px;
-}
-.FooterRight img {
-    margin: 40px 0 23px;
-    width: 100%;
-}
-.FooterRight p {
-    text-align: left;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 24px;
-}
-.FooterMiddle h2 {
-    text-align: left;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 30px;
-}
-.FooterMiddle div:not(:first-of-type) {
-    text-align: left;
-    margin-top: 30px;
-}
-.FooterMiddle div:first-of-type {
-    text-align: left;
-    margin-top: 40px;
-}
-.FooterMiddle img {
-    float: left;
-}
-.FooterMiddle h3 {
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    text-transform: uppercase;
-    padding: 15px 80px 5px 135px;
-}
-.FooterMiddle p {
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 24px;
-    padding-left: 135px;
-}
-
-.Copyright h2 {
-    color: #333333;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 20px 0;
-}
-.Copyright h2 > span {
-    color: #f38181;
-}
-
-
-@media all and (max-width: 1140px) {
-    .Container {
-        width: 100%;
-    }
-
-    .PageTitle div {
-        margin: 30px auto 50px;
-    }
-
-    .Header {
-        background: linear-gradient(
-                rgba(243, 129, 129, 0.85),
-                rgba(252, 227, 138, 0.85)
-        ), url("img/Eagle.png") top center no-repeat;
-        color: white;
-    }
-
-    .Menu div:first-of-type {
-        margin-left: 15px;
-    }
-
-    .Menu div:last-of-type {
-        margin-right: 15px;
-    }
-
-    .Menu p {
-        margin-right: 30px;
-    }
-
-    .Menu a:first-of-type {
-        margin-right: 20px;
-    }
-
-    .Title {
-        margin: 80px auto;
-    }
-
-    .MenuBottom div {
-        font-size: 20px;
-        padding: 20px 70px 10px 0;
-        margin-right: 20px;
-    }
-
-    .WorkWith {
-        padding-top: 70px;
-    }
-
-    .Devices {
-        padding-top: 70px;
-    }
-
-    .DevicesImg img:first-of-type {
-        top: 3px;
-        left: 110px;
-    }
-
-    .DevicesImg img:last-of-type {
-        top: 95px;
-        left: -10px;
-    }
-
-    .WhatWeDo {
-        padding: 80px 0 90px;
-    }
-
-    .WhatWeDoInfo {
-        margin-top: 60px;
-        text-align: left;
-    }
-
-    .WhatWeDoInfo img {
-        float: none;
-        width: 450px;
-        height: 280px;
-        padding: 55px 0 0 15px;
-    }
-
-    .WhatWeDoInfo div {
-        float: right;
-        width: 400px;
-        height: 380px;
-        margin: 0 20px;
-    }
-
-    .WhatWeDoInfo button {
-        width: 400px;
-    }
-
-    .Quotes {
-        padding: 40px 0;
-    }
-
-    .Quotes .Container div:first-child {
-        padding: 0 20px;
-    }
-
-    .Quotes a {
-        padding: 15px;
-        margin: 15px 0 15px 15px
-    }
-
-    .Team {
-        padding: 50px 0 60px
-    }
-
-    .TeamPhotos {
-        margin-top: 50px;
-    }
-
-    .TeamPhotos button:nth-child(2) {
-        margin: 0 0 20px 100px;
-    }
-
-    .Clients {
-        padding: 50px 0 40px;
-    }
-
-    .Clients .ClientsLeft {
-        margin-left: 20px;
-    }
-
-    .Clients .ClientsRight {
-        margin-right: 20px;
-    }
-
-    .Footer {
-        padding-top: 40px;
-    }
-
-    .Footer .Container {
-        padding-bottom: 40px;
-    }
-
-    .FooterLeft {
-        width: 30%;
-        margin-left: 20px;
-    }
-
-    .FooterRight {
-        margin-right: 20px;
-    }
-
-    .FooterMiddle {
-        margin: 0 275px 0 35%;
-        width: 370px;
-    }
-
-    .FooterLeft p:last-of-type {
-        margin: 15px 0 20px;
-    }
-
-    .FooterLeft p:last-of-type a {
-        margin-left: 10px;
-    }
-
-    .FooterLeft form input {
-        width: 150px;
-    }
-
-    .FooterLeft form button {
-        width: 90px;
-        font-size: 12px;
-    }
-
-    .FooterLeft ::placeholder {
-        font-size: 14px;
-    }
-}
-
-
-@media all and (max-width: 930px) {
-    .Container {
-        width: 100%;
-    }
-
-    .Header {
-        background: linear-gradient(
-                rgba(243, 129, 129, 0.85),
-                rgba(149, 225, 211, 0.85)
-        ), url("img/Eagle.png") top center no-repeat;
-    }
-
-    .Menu div:first-of-type {
-        float: none;
-        display: inline-block;
-        margin: 0;
-    }
-
-    .Menu div:last-of-type {
-        float: none;
-        width: 100%;
-        margin: 20px 0;
-        padding: 0;
-    }
-
-    .Menu p {
-        padding-bottom: 5px;
-        margin-right: 10px;
-    }
-
-    .Menu a:first-of-type {
-        margin: 0 5px 0 5px;
-    }
-
-    .Title {
-        margin: 80px auto 50px;
-    }
-
-    .Title h1 {
-        font-size: 100px;
-        line-height: 100px;
-        margin-top: 40px;
-    }
-
-    .Title div {
-        margin: 30px auto 40px;
-    }
-
-    .Title button {
-        background: transparent;
-        border: solid 3px white;
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 10px 25px;
-    }
-
-    .MenuBottom div {
-        border-top: none;
-        border-left: solid 2px white;
-        font-size: 18px;
-        padding: 0 10px;
-        margin-right: 0;
-        color: #f38181;
-    }
-
-    .MenuBottom div a {
-        font-size: 16px;
-    }
-
-    .MenuBottom div:hover {
-        color: #fce38a;
-        border-left-color: #f38181;
-    }
-
-    .WorkWith {
-        padding-top: 40px;
-    }
-
-    .Specialty {
-        text-align: left;
-        line-height: 22px;
-        padding: 0 10px;
-    }
-
-    .Specialty div:first-child {
-        margin-bottom: 50px;
-    }
-
-    .Specialty .Left {
-        width: 40%;
-        float: left;
-        margin-right: 70px;
-    }
-
-    .Specialty .Right {
-        width: 40%;
-        float: left;
-    }
-
-    .Specialty .Middle {
-        width: 100%;
-        float: left;
-        margin: 0 0;
-    }
-
-    .Specialty .Middle div:first-of-type {
-        width: 40%;
-        display: inline-block;
-        margin-right: 70px;
-    }
-
-    .Specialty .Middle div:last-of-type {
-        width: 40%;
-        display: inline-block;
-    }
-
-    .Devices {
-        padding-top: 60px;
-    }
-
-    .DevicesImg img:first-of-type {
-        top: 3px;
-        left: 100px;
-    }
-
-    .DevicesImg img:last-of-type {
-        top: 90px;
-        left: -85px;
-    }
-
-    .WhatWeDo {
-        padding: 45px 0 40px;
-    }
-
-    .WhatWeDoInfo {
-        margin-top: 0;
-    }
-
-    .WhatWeDo .PageTitle p {
-        padding: 0 25px;
-    }
-
-    .WhatWeDoInfo img {
-        float: none;
-        width: 100%;
-        height: 100%;
-        padding: 20px 0;
-    }
-
-    .WhatWeDoInfo div {
-        float: none;
-        width: 95%;
-        height: 90%;
-        margin: 0 auto;
-    }
-
-    .WhatWeDoInfo button {
-        width: 100%;
-    }
-
-    .Quotes {
-        padding: 30px 0;
-        background: #f8f8f8;
-    }
-
-    .Quotes .Container div:first-child {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .Quotes a {
-        float: none;
-        border: none;
-        padding: 0;
-    }
-
-    .QuotesText {
-        float: none;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .Quotes a:hover {
-        border: none;
-        border-bottom: solid 3px #f38181;
-    }
-
-    .Quotes p {
-        font-size: 20px;
-        line-height: 32px;
-        width: 100%;
-        margin: 10px 0;
-        padding: 0 10px;
-    }
-
-    .QuotesText h3 {
-        display: block;
-        text-align: right;
-        padding-right: 20px;
-        margin-left: 0;
-    }
-
-    .QuotesText h3:before {
-        width: 40px;
-        margin: 0 15px 5px -10px;
-    }
-
-    .Team {
-        padding: 30px 0 30px
-    }
-
-    .Team .PageTitle + p {
-        padding: 0 25px;
-    }
-
-    .TeamPhotos {
-        margin-top: 30px;
-    }
-
-    .TeamPhotos button {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        transition: all 0.5s;
-    }
-
-    .TeamPhotos button:nth-child(2) {
-        margin: 20px 0;
-    }
-
-    .TeamPhotos button h3 {
-        padding-top: 10px;
-    }
-
-    .TeamPhotos button > p {
-        padding-top: 5px;
-    }
-
-    .Clients {
-        padding: 30px 0 0;
-    }
-
-    .Clients:after {
-        background: url("img/Mountain.png") top center repeat-y;;
-    }
-
-    .Clients .ClientsLeft {
-        float: left;
-        width: 100%;
-        margin: 0 0 0 10px;
-    }
-
-    .Clients .ClientsRight {
-        float: left;
-        width: 100%;
-        margin: 0 0 0 10px;
-    }
-
-    .Clients .ClientsLeft > div:last-child, .Clients .ClientsRight > div:last-of-type {
-        float: left;
-    }
-
-    .ClientsLeft img, .ClientsRight img {
-        float: left;
-        margin: 0 20px 120px 0;
-    }
-
-    .ClientsLeft h3:after, .ClientsRight h3:after {
-        margin: 20px 0 20px 130px;
-    }
-
-    .Footer {
-        padding-top: 30px;
-    }
-
-    .Footer .Container {
-        padding-bottom: 20px;
-    }
-
-    .FooterLeft {
-        float: none;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .FooterRight {
-        display: none;
-    }
-
-    .FooterMiddle {
-        display: none;
-    }
-
-    .FooterLeft h2 {
-        padding-left: 20px;
-    }
-
-    .FooterLeft p:first-of-type {
-        margin: 15px 0 30px;
-        padding: 0 20px;
-        text-align: justify;
-    }
-
-    .FooterLeft p:nth-of-type(2) {
-        width: 100%;
-        padding: 0 0 15px 20px;
-    }
-
-    .FooterLeft p:last-of-type {
-        margin: 15px 0 20px;
-        padding-left: 20px;
-    }
-
-    .FooterLeft p:last-of-type a {
-        margin-left: 20px;
-    }
-
-    .FooterLeft form {
-        text-align: center;
-    }
-}
-
-/*@media all and (max-width: 775px) {
-    .DevicesImg img:first-of-type {
-        top: 53px;
-        left: -20px;
-    }
-
-    .DevicesImg img:last-of-type {
-        top: -340px;
-        left: 150px;
-    }
-}/*
